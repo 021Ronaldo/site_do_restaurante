@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link referente ao icons do booststrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Sinfonia do sabor</title>
+</head>
+<style>
+
+
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+
+            <img id="logo" src="../img/logo.png" width="75px" height="70px">
+            <img id="logo" src="../img/LogoLetras.png" width="200px" height="65px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                </li>
+
+                <!-- Dropdown menu Âncora ===================== -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="home.html" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Cardápio
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#menu">Entradas</a></li>
+                        <li><a class="dropdown-item" href="#principais">Pratos principais</a></li>
+                        <li><a class="dropdown-item" href="#bebidas">Bebidas</a></li>
+                        <li><a class="dropdown-item" href="#sobremesas">Sobremesa</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../paginas/userLoggedIn/reservar.html" id="bottonReservar">Reservar</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="localizacao.html">Localização</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="./Login.html">login</a>
+                </li> -->
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="./cadastro.html">cadastre-se</a>
+
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link " href="sobre.html" tabindex="-1" aria-disabled="true">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../paginas/login.html" tabindex="-1" aria-disabled="true">Login</a>
+                </li>
+
+                <!-- Aba do perfil -->
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Parte do carroussel -->
+
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/banner1.jpg" class="d-block w-100" alt="comida 1">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/banner2.jpg" class="d-block w-100" alt="comida 2">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/banner3.jpg" class="d-block w-100" alt="comida 3">
+            </div>
+        </div>
+    </div> -->
+    <!-- =========================== parte dos pratos principais =========================== -->
+
+    <main class="cardapio-container">
+        <link rel="stylesheet" href="../css/cardapio.css" />
+        
+
+        <section class="categoria">
+            <h2 id="menu">Entradas</h2>
+
+            <article class="prato-card">
+                <img src="../img/batata-frita.jpg" alt="batata-frita" />
+                <div class="prato-info">
+                    <h3>Onis de Batata</h3>
+                    <p class="descricao">
+                        Deliciosos bolinhos crocantes de batata temperados com ervas e cebola, ideais para compartilhar.
+                    </p>
+                    <span class="preco">R$ 28,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/queijo.jpg" alt="queijo" />
+                <div class="prato-info">
+                    <h3>Tábua de Queijo Torrada</h3>
+                    <p class="descricao">
+                        Seleção especial de queijos finos servidos com torradas crocantes e acompanhamentos artesanais.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/carne-seca.jpg" alt="carne seca" />
+                <div class="prato-info">
+                    <h3>Bolinho de Carne Seca</h3>
+                    <p class="descricao">
+                        Bolinhos dourados recheados com carne seca desfiada e temperos nordestinos, crocantes por fora e
+                        macios por dentro.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/saldaVerde.jpg" alt="salada verde" />
+                <div class="prato-info">
+                    <h3>Salada Verde</h3>
+                    <p class="descricao">
+                        Mix fresco de folhas verdes, tomate-cereja e molho especial da casa, ideal para começar a
+                        refeição com leveza.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="categoria">
+            <h2 id="principais">Pratos Principais</h2>
+
+            <article class="prato-card">
+                <img src="../img/almondega.jpg" alt="almondega" />
+                <div class="prato-info">
+                    <h3>Almôndega</h3>
+                    <p class="descricao">
+                        Almôndegas suculentas preparadas com carne selecionada e molho de tomate artesanal, servidas com
+                        arroz branco.
+                    </p>
+                    <span class="preco">R$ 25,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/feijoada.jpg" alt="feijoada" />
+                <div class="prato-info">
+                    <h3>Feijoada</h3>
+                    <p class="descricao">
+                        Tradicional feijoada brasileira com carnes defumadas, servida com arroz, farofa, couve e
+                        laranja.
+                    </p>
+                    <span class="preco">R$ 60,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/lasanha.jpg" alt="lasanha" />
+                <div class="prato-info">
+                    <h3>Lasanha</h3>
+                    <p class="descricao">
+                        Camadas de massa fresca intercaladas com molho bolonhesa, queijo derretido e molho bechamel
+                        cremoso.
+                    </p>
+                    <span class="preco">R$ 43,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/costelinha.jpg" alt="costelinha" />
+                <div class="prato-info">
+                    <h3>Costelinha</h3>
+                    <p class="descricao">
+                        Costelinha suína assada lentamente até atingir o ponto perfeito, acompanhada de molho barbecue e
+                        batatas rústicas.
+                    </p>
+                    <span class="preco">R$ 60,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/contrafile.jpg" alt="contrafile" />
+                <div class="prato-info">
+                    <h3>Contra Filé</h3>
+                    <p class="descricao">
+                        Corte nobre de contra filé grelhado no ponto certo, servido com arroz, fritas e molho
+                        chimichurri.
+                    </p>
+                    <span class="preco">R$ 75,00</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="categoria">
+            
+            <article class="prato-card">
+                <img src="../img/agua.jpg" alt="Agua Mineral e Sem Gás" />
+                <div class="prato-info">
+                    <h3>Água Mineral Sem Gás</h3>
+                    <p class="descricao">
+                        Água mineral natural e pura, ideal para se refrescar e acompanhar qualquer refeição.
+                    </p>
+                    <span class="preco">R$ 10,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/cerveja.jpg" alt="cerveja" />
+                <div class="prato-info">
+                    <h3>Cerveja</h3>
+                    <p class="descricao">
+                        Cerveja gelada servida no ponto ideal, perfeita para acompanhar seus pratos favoritos.
+                    </p>
+                    <span class="preco">R$ 10,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/vinho.jpg" alt="vinho" />
+                <div class="prato-info">
+                    <h3>Vinho Suave</h3>
+                    <p class="descricao">
+                        Vinho tinto suave e equilibrado, com notas frutadas e final leve, ideal para harmonizar com
+                        massas e carnes.
+                    </p>
+                    <span class="preco">R$ 10,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/redbull.jpg" alt="Red Bull" />
+                <div class="prato-info">
+                    <h3>Red Bull</h3>
+                    <p class="descricao">
+                        Energético refrescante com sabor único, perfeito para manter o pique durante o dia.
+                    </p>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/refrigerante.webp" alt="Refrigerante" />
+                <div class="prato-info">
+                    <h3>Refrigerante</h3>
+                    <p class="descricao">
+                        Escolha entre os sabores clássicos de refrigerante, sempre gelados e prontos para servir.
+                    </p>
+                    <span class="preco">R$ 15,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/suco.webp" alt="Suco de Laranja Natural" />
+                <div class="prato-info">
+                    <h3>Suco de Laranja Natural</h3>
+                    <p class="descricao">
+                        Suco natural de laranjas frescas, espremido na hora e cheio de sabor e vitamina C.
+                    </p>
+                    <span class="preco">R$ 18,00</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="categoria">
+            <h2 id="sobremesas">Sobremesas</h2>
+
+            <article class="prato-card">
+                <img src="../img/semifreddo.jpg" alt="semifreddo" />
+                <div class="prato-info">
+                    <h3>Semifreddo</h3>
+                    <p class="descricao">
+                        Sobremesa italiana leve e gelada, feita com creme aerado e toques de frutas ou chocolate.
+                    </p>
+                    <span class="preco">R$ 30,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/frozen.jpg" alt="frozen" />
+                <div class="prato-info">
+                    <h3>Frozen</h3>
+                    <p class="descricao">
+                        Creme gelado e leve, servido em taça com cobertura de frutas vermelhas ou calda de chocolate.
+                    </p>
+                    <span class="preco">R$ 24,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/trufaCereja.jpg" alt="trufaCereja" />
+                <div class="prato-info">
+                    <h3>Trufa de Cereja</h3>
+                    <p class="descricao">
+                        Deliciosa trufa artesanal com recheio cremoso de cereja e cobertura de chocolate belga.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/torta-de-brigadeiro.jpg" alt="torta-de-brigadeiro" />
+                <div class="prato-info">
+                    <h3>Torta de Brigadeiro</h3>
+                    <p class="descricao">
+                        Massa leve coberta com brigadeiro cremoso e raspas de chocolate, perfeita para os amantes de
+                        doce.
+                    </p>
+                    <span class="preco">R$ 28,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/panna.jpg" alt="panna" />
+                <div class="prato-info">
+                    <h3>Panna Cotta</h3>
+                    <p class="descricao">
+                        Clássica sobremesa italiana à base de creme de leite e baunilha, servida com calda de frutas
+                        vermelhas.
+                    </p>
+                    <span class="preco">R$ 42,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="../img/cheesecake.jpg" alt="cheesecake" />
+                <div class="prato-info">
+                    <h3>Cheesecake</h3>
+                    <p class="descricao">
+                        Sobremesa cremosa com base crocante de biscoito e cobertura de geleia artesanal de frutas.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <br>
+
+
+    <!-- 
+Remove o contêiner se desejar estender o rodapé até a largura total. -->
+    <div class="container my-3">
+
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-2 pb-0">
+                <!-- Seção  Media  social-->
+                <section class="mb-3">
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-facebook"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-instagram"></i></a>
+
+                    <!-- whatsapp -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-whatsapp"></i></a>
+                </section>
+                <!-- Seção  Media  social-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2025 Copyright:
+                <a class="text-white" href="#">Restaurante sem nome</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+
+</body>
+
+
+
+</html>
+
+
+<script>
+
+    let bottaoReservar = document.getElementById('bottonReservar')
+
+    bottaoReservar.addEventListener('click', function () {
+        let verificar = localStorage.getItem('usuario')
+        if (verificar === null) {
+            alert('Faça o login para efetuar sua reserva! ')
+            window.location.href = 'login.html'
+        } else {
+            window.location.href = '../paginas/userLoggedIn/index.html'
+        }
+    })
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        let usuarioString = localStorage.getItem('usuario')
+        let usuarioRecuperar = JSON.parse(usuarioString);
+
+
+        const ver_Usuario = document.getElementById('usuarioNome')
+
+        ver_Usuario.textContent = usuarioRecuperar.nome
+
+        /*console.log(usuarioRecuperar.nome, usuarioRecuperar.email)
+                 assim que a página for carregada irá carregar nome e email já dentro do formulário
+                 mas sem outros campos como numero de pessoas, data, hora e observação*/
+        let preencheNome = document.getElementById('nome')
+        let preencheEmail = document.getElementById('email')
+        let preencheTelefone = document.getElementById('telefone')
+
+
+
+        let preencheNumero_pessoas = document.getElementById('Numero_pessoas')
+        let preencheData = document.getElementById('data')
+        let preencheHora = document.getElementById('hora')
+        let preencheObs = document.getElementById('obs')
+
+
+        preencheNome.value = usuarioRecuperar.nome
+        preencheEmail.value = usuarioRecuperar.email
+        preencheTelefone.value = usuarioRecuperar.telefone
+
+
+        /* Irá carregar as informações dentro do formulario
+       que estão vindo do LocalStorage 'reserva'*/
+        let reservaRecuperar = JSON.parse(localStorage.getItem('reserva'));
+
+        preencheNumero_pessoas.value = reservaRecuperar.numeroPessoa
+        preencheData.value = reservaRecuperar.data
+        preencheHora.value = reservaRecuperar.hora
+        preencheObs.value = reservaRecuperar.obs
+
+
+    })
+
+    function sair() {
+        event.preventDefault();
+        window.location.href = '../login.html'
+        localStorage.removeItem('usuario')
+
+    }
+
+
+    function ver() {
+        v_numeroPessoas = document.getElementById('Numero_pessoas').value
+        v_data = document.getElementById('data').value
+        v_hora = document.getElementById('hora').value
+        v_telefone = document.getElementById('telefone').value
+        v_email = document.getElementById('email').value
+        v_obs = document.getElementById('obs').value
+
+        let reservaUsuario = {
+            numeroPessoa: v_numeroPessoas,
+            data: v_data,
+            hora: v_hora,
+            email: v_email,
+            telefone: v_telefone,
+            obs: v_obs
+
+        }
+
+        localStorage.setItem('reserva', JSON.stringify(reservaUsuario))
+
+        teste = localStorage.getItem('reserva')
+        console.log(teste)
+
+
+
+
+
+
+
+    }
+
+
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>

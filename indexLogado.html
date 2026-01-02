@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Inicial do Restaurante</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/funcoes2.js"></script>
+
+
+</head>
+<style>
+    img {
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <!-- <div class="navbar">
+    <div class="header-inner-content2">
+      <h1 class="logo">SINFONIA<span>SABOR</span></h1>
+      <nav>
+        <ul class="navbar">
+          <li class="nav-item active">
+            <a class="nav-link" href="contato.html">Entre em Contato</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cardapio.html">Cardápio</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="sobre.html" tabindex="-1" aria-disabled="true">sobre</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-icon-container">
+        < src="img/cart.png" />
+        <img src="img/menu.png" class="menu-button" />
+      </div>
+    </div>
+  </div> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="indexLogado.html">
+            <img id="logo" src="../../img/logo.png" width="75px" height="70px">
+            <img id="logo" src="../../img/LogoLetras.png" width="200px" height="65px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservar.html">Reservar</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="localizacao.html">Localização</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre2.html" tabindex="-1" aria-disabled="true">Sobre</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="usuarioNome" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="verPerfil.html">ver/editar Perfil</a></li>
+                        <li><a class="dropdown-item" href="visualizarReserva.html">Visualizar Reserva</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" onclick="sair()" href=""><i class="bi bi-box-arrow-in-right"></i>
+                                Sair</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="header-inner-content">
+            <div class="header-button-side-left">
+                <h2>Bateu aquela vontade de comer bem?</h2>
+                <p>
+                    Confira nosso cardápio e descubra sabores irresistíveis que vão te conquistar do primeiro ao último
+                    prato!
+                </p>
+                <a href="index.html">
+                    <button>Ver o Cardápio &#8594;</button>
+                </a>
+            </div>
+            <div class="header-button-side-right">
+                <img src="../../img/fundo index.webp" alt="banner" />
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content-->
+    <main>
+        <div class="gray-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="../../img/foto1.webp" alt="" />
+                    <img src="../../img/foto2.webp" alt="" />
+                    <img src="../../img/foto3.webp" alt="" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="page-inner-content">
+                <h3 class="section-title">Pratos mais Vendidos</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="../../img/caldo-verde-de-fios-de-couve-e-calabresa_rec.webp" alt="" />
+                        <p class="product-name">caldo verde de fios de couve e calabresa</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">120,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/penne-ao-molho-parisiense_rec.webp" alt="" />
+                        <p class="product-name">penne ao molho parisiense</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">80,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/lasanha-bolonhesa_rec.webp" alt="" />
+                        <p class="product-name">lasanha bolonhesa</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/fettuccine-com-peito-de-peru-e-brocolis_rec.webp" alt="" />
+                        <p class="product-name">fettuccine com peito de peru e brocolis</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">120,00 <span>REAIS</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="page-inner-content">
+                <h3 class="section-title">Lanches mais Comprados!!!</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="../../img/waffle-forno-de-minas_1.webp" alt="" />
+                        <p class="product-name">waffle forno de minas</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">42,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/croissant-de-chocolate-kitkat_rec.webp" alt="" />
+                        <p class="product-name">croissant de chocolate kitkat</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">50,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/chipa-rec.webp" alt="" />
+                        <p class="product-name">chipa</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price">35,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/pao-frances-rustico_rec.webp" alt="" />
+                        <p class="product-name">pao frances rustico</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">78,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/croque-monsieur_1.webp" alt="" />
+                        <p class="product-name">croque monsieur</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">84,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/croissant-de-presunto-e-queijo_rec.webp" alt="" />
+                        <p class="product-name">croissant de presunto e queijo</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">92,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/pao-de-queijo-gourmet_rec.webp" alt="" />
+                        <p class="product-name">pão de queijo gourmet</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price">75,00 <span>REAIS</span></p>
+                    </div>
+                    <div class="product">
+                        <img src="../../img/croissant-de-frango-com-requeijao_rec.webp" alt="" />
+                        <p class="product-name">croissant de frango com requeijão</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price">90,00 <span>REAIS</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray-background">
+            <div class="header-inner-content exclusive">
+                <div class="header-button-side-left">
+                    <h2>🍽️ Reserve sua mesa hoje!</h2>
+                    <p>
+                        Venha viver uma experiência deliciosa no nosso restaurante, conforto e bom atendimento em um só
+                        lugar. As
+                        reservas são limitadas, garanta já a sua!
+                    </p>
+                    <a href="reservar.html">
+                        <button>Faça sua reserva agora e aproveite momentos especiais! &#8594;</button>
+                    </a>
+                </div>
+                <div class="header-button-side-right">
+                    <img src="../../img/reserva.webp" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="page-inner-content">
+            <div class="testimonails">
+                <div class="testimonial">
+                    <p>"</p>
+                    <p>
+                        “Simplesmente maravilhoso! A comida é deliciosa, tempero na medida certa e o atendimento é
+                        impecável. Dá
+                        vontade de voltar toda semana!”
+                    </p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p>Marcos Antônio</p>
+                </div>
+                <div class="testimonial">
+                    <p>"</p>
+                    <p>
+                        “Ambiente acolhedor, pratos bem servidos e com aquele sabor caseiro que a gente ama. Dá pra
+                        sentir o
+                        carinho
+                        em cada detalhe!” </p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p>Igor Rodrigues</p>
+                </div>
+                <div class="testimonial">
+                    <p>"</p>
+                    <p>
+                        “Experiência incrível! Desde a entrada até a sobremesa, tudo perfeito. Recomendo de olhos
+                        fechados — o
+                        melhor restaurante da região!” </p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p>Edison</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="gray-background">
+        <div class="page-inner-content footer-content">
+            <div class="dowload-options">
+                <p>Baixe nossa aplicação</p>
+                <p>Baixe nossa aplicação para Android e iOS</p>
+                <div>
+                    <img src="../../img/play-store.png" alt="" />
+
+                </div>
+            </div>
+            <div class="logo-footer">
+
+                <img id="logo" src="../../img/logo.png" width="75px" height="70px">
+                <img id="logo" src="../../img/LogoLetras.png" width="200px" height="65px">
+                <p>
+                    Nosso objetivo é ajudar pessoas comuns a se tornarem Desenvolvedores
+                    Web Pro Max.
+                </p>
+            </div>
+            <div class="links-footer">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Políticas</li>
+                    <li>Torne-se afiliado</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="page-inner-content" />
+
+        <div class="page-inner-content copyright">
+            <p>Copyright 2025 - SINFONIA DO SABOR - Criador do WebSite</p>
+        </div>
+    </footer>
+
+
+    <script>
+      
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            let abc = localStorage.getItem('usuarioLogado')
+            if (abc !== '1') {
+                alert('Por favor faço o login!')
+                window.location.href = '../../login.html'
+            } else {
+
+                let usuarioString = localStorage.getItem('usuario')
+                let usuarioRecuperar = JSON.parse(usuarioString);
+
+
+                const ver_Usuario = document.getElementById('usuarioNome')
+
+                ver_Usuario.innerHTML = usuarioRecuperar.nome
+            }
+        })
+
+    </script>
+</body>
+
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
